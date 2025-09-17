@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Users dashboard</title>
+</head>
+<body>
+
+    <div id="updateModal" class="updateModal unsee">
+        <div class="modal-content">
+            <span id="closeModal">X</span>
+            <h2>Modifier l'utilisateur</h2>
+            <p class="unmodifable">ID : <span id="updateUserId"></span></p>
+            <input type="text" id="updateUsername" placeholder="Nom">
+            <input type="password" id="updatePassword" placeholder="Mot de passe">
+            <button id="saveUpdate">Enregistrer</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <h1 class="title">Tableau de bord des utilisateur</h1>
+
+        <table class="tableCR" id="tableCR">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nom</th>
+                    <th>Mot de passe</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <script src="get.js"></script>
+    <script src="modal.js"></script>
+    <script src="sup.js"></script>
+</body>
+</html>
